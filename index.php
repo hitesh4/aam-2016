@@ -16,6 +16,17 @@
 <body>
   <?php include 'navbar.php'; ?>
 
+  <div class="container">
+    <?php
+    if (isset($_GET["alert"])) {
+      echo "<div class='alert alert-danger alert-dismissible'>";
+      echo "<button type='button' class='close' data-dismiss='alert' aria-label='Close'>";
+      echo "<span aria-hidden='true'>&times;</span>";
+      echo "</button>";
+      echo $_GET["alert"];
+      echo "</div>";
+    }
+     ?>
 
     <div class="container">
       <div class="col-md-6 text-center" id="verticalLine">
