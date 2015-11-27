@@ -16,11 +16,9 @@
   </head>
 
   <body>
-    <div class="row">
-      <input type="search"
-        style="position:relative;left:50px;width:800px;padding:9px;border-radius:7px;margin-top:20px;">
-      <table class="table table-striped"
-        style="width:800px;">
+    <div class="row search-table">
+      <table id="myTable" class="table table-striped tablesorter"
+        style="">
         <?php include 'acell_backend.php'; ?>
       </table>
       <button type="button"
